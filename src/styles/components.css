@@ -1,0 +1,66 @@
+
+table {
+    @apply border-separate border-spacing-y-2.5;
+}
+
+th {
+    @apply text-left pl-2 text-zinc-700;
+}
+
+tbody > tr {
+    @apply drop-shadow;
+}
+
+
+tr:hover > td {
+    @apply bg-zinc-200;
+}
+
+tr.selected > td {
+    @apply bg-zinc-200;
+}
+
+td {
+    @apply bg-zinc-100 text-zinc-700 p-2;
+}
+
+td:first-child {
+    @apply rounded-l-xl;
+}
+
+td:last-child {
+    @apply rounded-r-xl;
+}
+
+
+
+.btn {
+    @apply inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2;
+}
+.btn:disabled {
+    @apply bg-blue-50 text-blue-300;
+}
+
+.btn.danger {
+    @apply inline-flex justify-center rounded-md border border-transparent bg-red-100 px-4 py-2 text-sm font-medium text-red-900 hover:bg-red-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2;
+}
+
+
+input {
+    @apply border-2 border-zinc-200 rounded-lg p-1;
+}
+
+.markdown > h1 {
+    @apply text-2xl font-bold;
+}
+.markdown > h2 {
+    @apply text-xl font-bold;
+}
+
+.markdown > h3 {
+    @apply font-bold;
+}
+
+.markdown > p {
+    @apply my-3;
+}

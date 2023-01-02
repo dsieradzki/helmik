@@ -1,0 +1,28 @@
+html, body, body > #root {
+    @apply p-0 m-0 w-full h-full;
+    font-family: Poppins, serif;
+}
+:root {
+    --color-primary: #e4e4e7;
+    --color-secondary: #fafafa;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-secondary) var(--color-primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--color-primary);
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+    border: 3px solid var(--color-primary);
+    @apply rounded-lg
+}

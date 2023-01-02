@@ -1,0 +1,6 @@
+.hardBreak {
+    overflow-x: auto;
+    overflow-y: auto;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+}
